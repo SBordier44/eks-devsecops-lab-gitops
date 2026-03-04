@@ -28,8 +28,8 @@ Deployments are managed using **ArgoCD**.
 
 ## Related repositories
 
-Application source code: [eks-devsecops-lab-app](https://github.com/SBordier/eks-devsecops-lab-app)
+Application source code: [eks-devsecops-lab-app](https://github.com/SBordier44/eks-devsecops-lab-app)
 
-Infrastructure provisioning: [eks-devsecops-lab-infra](https://github.com/SBordier/eks-devsecops-lab-infra)
+Infrastructure provisioning: [eks-devsecops-lab-infra](https://github.com/SBordier44/eks-devsecops-lab-infra)
 
-Documentation: [eks-devsecops-lab-docs](https://github.com/SBordier/eks-devsecops-lab-docs)
+Documentation: [eks-devsecops-lab-docs](https://github.com/SBordier44/eks-devsecops-lab-docs)
