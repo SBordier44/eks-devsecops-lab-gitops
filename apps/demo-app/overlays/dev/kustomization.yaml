@@ -5,9 +5,6 @@ resources:
 - namespace.yaml
 - ../../base
 images:
-- name: eks-devsecops-dev-app
-  newName: 585881786588.dkr.ecr.eu-west-3.amazonaws.com/eks-devsecops-lab-dev-app
-  newTag: sha-4623671
 - name: eks-devsecops-lab-dev-app
   newName: 585881786588.dkr.ecr.eu-west-3.amazonaws.com/eks-devsecops-lab-dev-app
   newTag: sha-dbbae1f
