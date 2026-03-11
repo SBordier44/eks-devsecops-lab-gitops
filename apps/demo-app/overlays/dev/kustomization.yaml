@@ -1,0 +1,13 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: demo-app-dev
+resources:
+  - namespace.yaml
+  - ../../base
+images:
+  - name: eks-devsecops-lab-dev-app
+    newName: 585881786588.dkr.ecr.eu-west-3.amazonaws.com/eks-devsecops-lab-dev-app
+    newTag: sha-dbbae1f
+labels:
+  - pairs:
+      app.kubernetes.io/environment: dev
