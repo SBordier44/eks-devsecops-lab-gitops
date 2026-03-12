@@ -29,7 +29,7 @@ spec:
       source:
         repoURL: https://github.com/SBordier44/eks-devsecops-lab-gitops
         targetRevision: main
-        path: '{{app.path.path}}/overlays/{{env}}'
+        path: '{{app.path}}/overlays/{{env}}'
       destination:
         server: https://kubernetes.default.svc
         namespace: '{{app.path.basename}}-{{namespaceSuffix}}'
