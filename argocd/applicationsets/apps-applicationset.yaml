@@ -21,7 +21,7 @@ spec:
               pathParamPrefix: cluster
   template:
     metadata:
-      name: '{{path.basename}}-{{env}}'
+      name: '{{app.path.basename}}-{{env}}'
       annotations:
         argocd.argoproj.io/sync-wave: "100"
     spec:
@@ -29,10 +29,10 @@ spec:
       source:
         repoURL: https://github.com/SBordier44/eks-devsecops-lab-gitops
         targetRevision: main
-        path: '{{path}}/overlays/{{env}}'
+        path: '{{app.path.path}}/overlays/{{env}}'
       destination:
         server: https://kubernetes.default.svc
-        namespace: '{{path.basename}}-{{namespaceSuffix}}'
+        namespace: '{{app.path.basename}}-{{namespaceSuffix}}'
       syncPolicy:
         automated:
           prune: true
