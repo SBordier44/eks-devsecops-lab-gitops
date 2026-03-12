@@ -8,4 +8,4 @@ resources:
   - ../platform/cert-manager/dev/app.yaml
   - ../platform/external-secrets/dev/app.yaml
   - ../platform/kyverno/dev/app.yaml
-  - ../platform/kyverno/policies
+  - ../platform/kyverno/policies/disallow-latest-tag.yaml
