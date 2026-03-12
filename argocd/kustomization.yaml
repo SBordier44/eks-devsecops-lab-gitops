@@ -4,8 +4,8 @@ resources:
   - projects/platform-project.yaml
   - projects/apps-project.yaml
   - applicationsets/apps-applicationset.yaml
-  - ../platform/ingress-nginx/dev/app.yaml
-  - ../platform/cert-manager/dev/app.yaml
-  - ../platform/external-secrets/dev/app.yaml
-  - ../platform/kyverno/dev/app.yaml
-  - ../platform/kyverno/policies
+  - platform/ingress-nginx.yaml
+  - platform/cert-manager.yaml
+  - platform/external-secrets.yaml
+  - platform/kyverno.yaml
+  - policies/disallow-latest-tag.yaml
