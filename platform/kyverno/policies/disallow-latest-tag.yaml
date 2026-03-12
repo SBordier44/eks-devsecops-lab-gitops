@@ -2,6 +2,8 @@ apiVersion: kyverno.io/v1
 kind: ClusterPolicy
 metadata:
   name: disallow-latest-tag
+  annotations:
+    argocd.argoproj.io/sync-wave: "6"
 spec:
   validationFailureAction: enforce
   rules:

@@ -11,6 +11,9 @@ spec:
     repoURL: https://charts.external-secrets.io
     chart: external-secrets
     targetRevision: 2.1.0
+    helm:
+      values: |
+        installCRDs: true
   destination:
     server: https://kubernetes.default.svc
     namespace: external-secrets
