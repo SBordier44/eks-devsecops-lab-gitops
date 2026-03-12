@@ -5,23 +5,32 @@ metadata:
   namespace: argocd
 spec:
   generators:
-    - git:
-        repoURL: https://github.com/SBordier44/eks-devsecops-lab-gitops
-        revision: main
-        directories:
-          - path: apps/*
+    - matrix:
+        generators:
+          - git:
+              repoURL: https://github.com/SBordier44/eks-devsecops-lab-gitops
+              revision: main
+              directories:
+                - path: apps/*
+          - git:
+              repoURL: https://github.com/SBordier44/eks-devsecops-lab-gitops
+              revision: main
+              files:
+                - path: clusters/*/config.yaml
   template:
     metadata:
-      name: '{{path.basename}}-dev'
+      name: '{{path.basename}}-{{env}}'
+      annotations:
+        argocd.argoproj.io/sync-wave: "100"
     spec:
       project: apps
       source:
         repoURL: https://github.com/SBordier44/eks-devsecops-lab-gitops
         targetRevision: main
-        path: '{{path}}/overlays/dev'
+        path: '{{path}}/overlays/{{env}}'
       destination:
         server: https://kubernetes.default.svc
-        namespace: '{{path.basename}}-dev'
+        namespace: '{{path.basename}}-{{namespaceSuffix}}'
       syncPolicy:
         automated:
           prune: true

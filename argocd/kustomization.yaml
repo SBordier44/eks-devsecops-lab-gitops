@@ -3,5 +3,7 @@ kind: Kustomization
 resources:
   - projects/platform-project.yaml
   - projects/apps-project.yaml
+  - applications/platform-root.yaml
+  - applications/apps-root.yaml
   - applicationsets/platform-applicationset.yaml
   - applicationsets/apps-applicationset.yaml

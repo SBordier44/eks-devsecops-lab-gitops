@@ -10,6 +10,7 @@ spec:
     - https://kubernetes.github.io/ingress-nginx
     - https://charts.jetstack.io
     - https://charts.external-secrets.io
+    - https://kyverno.github.io/kyverno
   destinations:
     - namespace: ingress-nginx
       server: https://kubernetes.default.svc

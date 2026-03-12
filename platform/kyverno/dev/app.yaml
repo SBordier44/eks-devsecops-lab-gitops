@@ -1,25 +1,23 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: ingress-nginx
+  name: kyverno
   namespace: argocd
   annotations:
-    argocd.argoproj.io/sync-wave: "0"
+    argocd.argoproj.io/sync-wave: "1"
 spec:
   project: platform
   source:
-    repoURL: https://kubernetes.github.io/ingress-nginx
-    chart: ingress-nginx
-    targetRevision: 4.15.0
+    repoURL: https://kyverno.github.io/kyverno
+    chart: kyverno
+    targetRevision: 3.7.1
     helm:
       values: |
-        controller:
-          replicaCount: 2
-          service:
-            type: LoadBalancer
+        admissionController:
+          replicas: 2
   destination:
     server: https://kubernetes.default.svc
-    namespace: ingress-nginx
+    namespace: kyverno
   syncPolicy:
     automated:
       prune: true
