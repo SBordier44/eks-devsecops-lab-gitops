@@ -4,7 +4,7 @@ metadata:
   name: demo-app
   namespace: demo-app-dev
 spec:
-  ingressClassName: nginx
+  ingressClassName: traefik
   rules:
     - http:
         paths:
