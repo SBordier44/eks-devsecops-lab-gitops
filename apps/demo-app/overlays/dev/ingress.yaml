@@ -12,4 +12,3 @@ spec:
       services:
         - name: demo-app
           port: 80
-          passHostHeader: false
