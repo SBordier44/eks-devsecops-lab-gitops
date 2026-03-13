@@ -3,3 +3,4 @@ kind: Kustomization
 resources:
   - projects/apps-project.yaml
   - applications/demo-app-dev.yaml
+  - applications/traefik.yaml
