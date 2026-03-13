@@ -1,2 +1,7 @@
 .idea
 .vscode
+*.zip
+*.tar
+*.tar.*
+*.bz
+*.br.*
