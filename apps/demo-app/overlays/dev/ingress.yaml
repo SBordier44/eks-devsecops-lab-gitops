@@ -10,7 +10,7 @@ metadata:
 spec:
   ingressClassName: traefik
   rules:
-    - host: app-demo.sececy-it.net
+    - host: app-demo.sedecy-it.net
       http:
         paths:
           - path: /
