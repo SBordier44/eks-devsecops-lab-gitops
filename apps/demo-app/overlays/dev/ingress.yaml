@@ -3,6 +3,9 @@ kind: Ingress
 metadata:
   name: demo-app
   namespace: demo-app-dev
+  annotations:
+    traefik.ingress.kubernetes.io/router.entrypoints: web
+    traefik.ingress.kubernetes.io/router.tls: "false"
 spec:
   ingressClassName: traefik
   rules:
