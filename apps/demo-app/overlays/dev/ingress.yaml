@@ -4,10 +4,14 @@ metadata:
   name: demo-app
   namespace: demo-app-dev
   annotations:
-    traefik.ingress.kubernetes.io/router.entrypoints: web
-    traefik.ingress.kubernetes.io/router.tls: "false"
+    traefik.ingress.kubernetes.io/router.entrypoints: web,websecure
+    cert-manager.io/cluster-issuer: letsencrypt-staging
 spec:
   ingressClassName: traefik
+  tls:
+    - hosts:
+        - app-demo.sedecy-it.net
+      secretName: app-demo-sedecy-it-net-tls
   rules:
     - host: app-demo.sedecy-it.net
       http:
