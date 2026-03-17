@@ -6,3 +6,4 @@ resources:
   - applications/traefik.yaml
   - applications/cert-manager.yaml
   - resources/cert-manager/clusterissuer-letsencrypt-staging.yaml
+  - resources/cert-manager/clusterissuer-letsencrypt-prod.yaml
