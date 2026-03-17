@@ -4,3 +4,4 @@ resources:
   - projects/apps-project.yaml
   - applications/demo-app-dev.yaml
   - applications/traefik.yaml
+  - applications/cert-manager.yaml
