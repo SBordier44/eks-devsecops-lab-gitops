@@ -7,3 +7,4 @@ resources:
   - applications/cert-manager.yaml
   - resources/cert-manager/clusterissuer-letsencrypt-staging.yaml
   - resources/cert-manager/clusterissuer-letsencrypt-prod.yaml
+  - applications/external-secrets.yaml
