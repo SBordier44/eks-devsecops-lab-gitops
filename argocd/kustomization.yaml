@@ -9,3 +9,4 @@ resources:
   - resources/cert-manager/clusterissuer-letsencrypt-prod.yaml
   - applications/external-secrets-crds.yaml
   - applications/external-secrets.yaml
+  - resources/external-secrets/clustersecretstore-aws.yaml
