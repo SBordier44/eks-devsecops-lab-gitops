@@ -5,3 +5,4 @@ resources:
   - applications/demo-app-dev.yaml
   - applications/traefik.yaml
   - applications/cert-manager.yaml
+  - resources/cert-manager/clusterissuer-letsencrypt-staging.yaml
