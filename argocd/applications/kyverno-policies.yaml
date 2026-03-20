@@ -9,7 +9,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/sBordier44/eks-devsecops-lab-gitops.git
-    targetRevision: HEAD
+    targetRevision: main
     path: argocd/resources/kyverno
   destination:
     server: https://kubernetes.default.svc
