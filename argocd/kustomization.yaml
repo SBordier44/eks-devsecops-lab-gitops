@@ -11,3 +11,4 @@ resources:
   - applications/external-secrets.yaml
   - resources/external-secrets/clustersecretstore-aws.yaml
   - applications/kyverno.yaml
+  - applications/kyverno-policies.yaml
