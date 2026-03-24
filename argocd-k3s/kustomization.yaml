@@ -2,10 +2,10 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-  - ../argocd/projects/apps-project.yaml
-  - ../argocd/applications/traefik.yaml
-  - ../argocd/applications/cert-manager.yaml
-  - ../argocd/resources/cert-manager/clusterissuer-letsencrypt-staging.yaml
-  - ../argocd/resources/cert-manager/clusterissuer-letsencrypt-prod.yaml
-  - ../argocd/applications/kyverno.yaml
-  - ../argocd/applications/kyverno-policies.yaml
+  - projects/apps-project.yaml
+  - applications/traefik.yaml
+  - applications/cert-manager.yaml
+  - resources/cert-manager/clusterissuer-letsencrypt-staging.yaml
+  - resources/cert-manager/clusterissuer-letsencrypt-prod.yaml
+  - applications/kyverno.yaml
+  - applications/kyverno-policies.yaml
