@@ -17,3 +17,6 @@ images:
 labels:
 - pairs:
     app.kubernetes.io/environment: dev
+
+patches:
+  - path: patch-deployment-secret-env.yaml
