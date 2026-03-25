@@ -9,4 +9,5 @@ resources:
   - resources/cert-manager/clusterissuer-letsencrypt-prod.yaml
   - applications/kyverno.yaml
   - applications/kyverno-policies.yaml
+  - applications/sealed-secrets.yaml
   - applications/demo-app-k3s-dev.yaml
