@@ -4,15 +4,15 @@ kind: Kustomization
 namespace: demo-app-dev
 
 resources:
-  - namespace.yaml
-  - ../../base
-  - ingress.yaml
+- namespace.yaml
+- ../../base
+- ingress.yaml
 
 images:
-  - name: eks-devsecops-lab-dev-app
-    newName: ghcr.io/sbordier44/eks-devsecops-lab-dev-app
-    newTag: sha-28ceac6
+- name: eks-devsecops-lab-dev-app
+  newName: ghcr.io/sbordier44/eks-devsecops-lab-dev-app
+  newTag: sha-4cdb056
 
 labels:
-  - pairs:
-      app.kubernetes.io/environment: dev
+- pairs:
+    app.kubernetes.io/environment: dev
