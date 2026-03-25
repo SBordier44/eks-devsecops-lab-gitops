@@ -8,8 +8,8 @@ resources:
 - externalsecret.yaml
 images:
 - name: eks-devsecops-lab-dev-app
-  newName: 585881786588.dkr.ecr.eu-west-3.amazonaws.com/eks-devsecops-lab-dev-app
-  newTag: sha-f6809fd
+  newName: ghcr.io/sbordier44/eks-devsecops-lab-dev-app
+  newTag: sha-28ceac6
 labels:
 - pairs:
     app.kubernetes.io/environment: dev
