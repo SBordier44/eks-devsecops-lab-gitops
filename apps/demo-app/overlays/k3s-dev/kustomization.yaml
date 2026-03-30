@@ -12,7 +12,7 @@ resources:
 images:
 - name: eks-devsecops-lab-dev-app
   newName: ghcr.io/sbordier44/eks-devsecops-lab-dev-app
-  newTag: sha-0064f9d
+  newTag: sha-b28aa6a
 
 labels:
 - pairs:
