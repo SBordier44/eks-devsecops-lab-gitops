@@ -32,6 +32,7 @@ spec:
           failureAction: Audit
           required: true
           mutateDigest: false
+          verifyDigest: false
           attestors:
             - count: 1
               entries:
