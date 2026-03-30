@@ -12,6 +12,7 @@ metadata:
       GHCR has a valid Cosign keyless signature produced by the expected GitHub
       Actions workflow.
 spec:
+  validationFailureAction: Audit
   webhookConfiguration:
     failurePolicy: Ignore
     timeoutSeconds: 15
@@ -32,6 +33,12 @@ spec:
           required: true
           mutateDigest: false
           verifyDigest: false
+          imageRegistryCredentials:
+            helpers:
+              - default
+              - github
+            secrets:
+              - ghcr-kyverno
           attestors:
             - count: 1
               entries:
