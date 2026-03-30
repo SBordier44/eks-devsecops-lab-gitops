@@ -15,7 +15,7 @@ spec:
   webhookConfiguration:
     failurePolicy: Ignore
     timeoutSeconds: 15
-  background: true
+  background: false
   rules:
     - name: verify-demo-app-keyless-signature
       match:
