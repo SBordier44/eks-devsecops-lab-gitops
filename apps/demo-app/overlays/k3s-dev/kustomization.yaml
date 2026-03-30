@@ -12,11 +12,11 @@ resources:
 images:
 - name: eks-devsecops-lab-dev-app
   newName: ghcr.io/sbordier44/eks-devsecops-lab-dev-app
-  newTag: sha-4cdb056
+  newTag: sha-b28aa6a
 
 labels:
 - pairs:
     app.kubernetes.io/environment: dev
 
 patches:
-  - path: patch-deployment-secret-env.yaml
+- path: patch-deployment-secret-env.yaml
