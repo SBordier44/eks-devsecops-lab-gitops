@@ -16,7 +16,6 @@ spec:
     failurePolicy: Ignore
     timeoutSeconds: 15
   background: false
-  skipBackgroundRequests: true
   rules:
     - name: verify-demo-app-keyless-signature
       match:
@@ -33,6 +32,12 @@ spec:
           required: true
           mutateDigest: false
           verifyDigest: false
+          imageRegistryCredentials:
+            helpers:
+              - default
+              - github
+            secrets:
+              - ghcr-kyverno
           attestors:
             - count: 1
               entries:
